@@ -1,8 +1,15 @@
-name: gregghz
-markdown: redcarpet
+markdown: maruku
 pygments: true
+permalink: /posts/:title
 encoding: UTF-8
 
-redcarpet:
-  extensions: ["smart"]
+maruku:
+  use_tex: true
+  use_divs: true
 
+name: gregg hernandez
+url: http://gregghz.github.io
+description: A blog about programming and things
+twitter: gregghz
+github: gregghz
+gravatar_url: https://secure.gravatar.com/avatar/41a6b438156185e1c71cc419dc2f714c.png

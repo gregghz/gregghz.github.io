@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>
-    
-      Posts &ndash;
-    
-    gregg hernandez
+    {% if page.title %}
+      {{ page.title }} &ndash;
+    {% endif %}
+    {{ site.name }}
   </title>
 
-  <meta name="author" content="gregg hernandez" />
-  <meta name="description" content="A blog about programming and things" />
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="description" content="{{ site.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
@@ -30,19 +30,19 @@
 <body>
   <section class="sidebar">
     <a href="/">
-      <img src="https://secure.gravatar.com/avatar/41a6b438156185e1c71cc419dc2f714c.png?s=150" height="75" width="75" class="avatar" />
+      <img src="{{ site.gravatar_url }}?s=150" height="75" width="75" class="avatar" />
     </a>
 
     <section class="name">
       <a href="/">
-        <span id="fname">gregg</span>
-        <span id="lname">hernandez</span>
+        <span id="fname">{{ site.name|split:' '|first }}</span>
+        <span id="lname">{{ site.name|split:' '|last }}</span>
       </a>
     </section>
 
     <section class="meta">
-      <a href="https://github.com/gregghz" target="_blank"><i class="icon icon-github"></i></a>
-      <a href="https://twitter.com/gregghz" target="_blank"><i class="icon icon-twitter"></i></a>
+      <a href="https://github.com/{{ site.github }}" target="_blank"><i class="icon icon-github"></i></a>
+      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="icon icon-twitter"></i></a>
       <a href="/atom.xml"><i class="icon icon-rss"></i></a>
     </section>
 
@@ -54,23 +54,7 @@
     </section>
   </section>
 
-  <section class="content">
-  <ul class="listing">
-    
-    <li>
-      <span>November 27, 2013</span> <a href="/posts/lazy-lists">Lazy Lists and Android</a>
-    </li>
-    
-    <li>
-      <span>November 26, 2013</span> <a href="/posts/lazy">Lazy</a>
-    </li>
-    
-    <li>
-      <span>October 23, 2013</span> <a href="/posts/blog-about-learning-math-and-programming">Hello World</a>
-    </li>
-    
-  </ul>
-</section>
+  {{ content }}
 </body>
 
 </html>
