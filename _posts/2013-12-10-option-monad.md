@@ -16,12 +16,12 @@ Commonly I would use Option as follows:
 
 val hash = HashMap("one" -> 1, "two" -> 2)
 val one = hash.get("one") match {
-	case Some(n) => n // this case is used
-	case None => 0
+    case Some(n) => n // this case is used
+    case None => 0
 }
 
 val three = hash.get("three") match {
-	case Some(n) => n
+    case Some(n) => n
     case None => 0 // this case is used
 }
 
