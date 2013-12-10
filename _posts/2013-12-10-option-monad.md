@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scala's Option Monad
-cateogyr: posts
+comments: true
 ---
 
 Recently I've been playing with Monads and making an effort to
