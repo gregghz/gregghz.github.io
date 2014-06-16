@@ -1,9 +1,9 @@
-markdown: maruku
+markdown: kramdown
 pygments: true
 permalink: /posts/:title
 encoding: UTF-8
 
-maruku:
+kramdown:
   use_tex: true
   use_divs: true
 
