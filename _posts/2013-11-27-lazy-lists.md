@@ -117,13 +117,11 @@ val a = () => match _a {
 
 Just using the lazy keyword is much simpler.
 
-Now you might be saying something like, "this is all great, but
-Android uses Java, not Scala, so it's really useless for my Android
-projects." Fortunately, Scala compiles to Java bytecode. The Android build
-system turns bytecode into .dex files for Dalvik. That means it's not
-too difficult to use Scala on Android. To help you out (and because
-you really should stop using Java) I found a sample Android project
-that utilizes Scala.
+Now you might be saying something like, "this is all great, but Android uses
+Java, not Scala, so it's really useless for my Android projects." Fortunately,
+Scala compiles to Java bytecode. The Android build system turns bytecode into
+.dex files for Dalvik. That means it's not too difficult to use Scala on
+Android. To help you out I found a sample Android project that utilizes Scala.
 
 [jayway/maven-android-plugin-samples][]
 
